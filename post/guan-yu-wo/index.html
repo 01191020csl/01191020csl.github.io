@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Gridea | Gridea</title>
+<title>关于我 | 01191020csl&#39;s blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://01191020csl.github.io/favicon.ico?v=1581042883572">
+<link rel="shortcut icon" href="https://01191020csl.github.io/favicon.ico?v=1581043592049">
 <link rel="stylesheet" href="https://01191020csl.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -18,7 +24,14 @@
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="
+陈树伦
+JSOIer
+我的洛谷
+我的CF然而至今为止一个题没做
+
+..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -27,8 +40,8 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://01191020csl.github.io">
-        <img src="https://01191020csl.github.io/images/avatar.png?v=1581042883572" class="site-logo">
-        <h1 class="site-title">Gridea</h1>
+        <img src="https://01191020csl.github.io/images/avatar.png?v=1581043592049" class="site-logo">
+        <h1 class="site-title">01191020csl&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
         <div class="line"></div>
@@ -43,20 +56,20 @@
         
       
         
-          <a href="/archives" class="site-nav">
-            归档
+          <a href="/solutions" class="site-nav">
+            题解
           </a>
         
       
         
-          <a href="/tags" class="site-nav">
-            标签
+          <a href="/experiences" class="site-nav">
+            游记
           </a>
         
       
         
-          <a href="/post/about" class="site-nav">
-            关于
+          <a href="/notes" class="site-nav">
+            笔记
           </a>
         
       
@@ -88,35 +101,31 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: Gridea</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://01191020csl.github.io/post/hello-gridea">
-                  <h2 class="post-title">Hello Gridea</h2>
-                </a>
-                <div class="post-date">
-                  2018-12-12
-                </div>
-                <div class="post-abstract">
-                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+          <div class="post-detail">
+            <h2 class="post-title">关于我</h2>
+            <div class="post-date">2020-02-07</div>
+            
+            <div class="post-content" v-pre>
+              <ul>
+<li>陈树伦</li>
+<li>JSOIer</li>
+<li>我的<a href="https://luogu.com.cn/user/61068">洛谷</a></li>
+<li>我的<a href="http://codeforces.com/profile/01191020csl">CF</a><s>然而至今为止一个题没做</s></li>
+</ul>
 
-                </div>
-              </div>
-              
-                <a class="right" href="https://01191020csl.github.io/post/hello-gridea">
-                  <div class="feature-container" style="background-image: url('https://01191020csl.github.io/post-images/hello-gridea.png')">
-                  </div>
-                </a>
-              
-            </article>
-          
+            </div>
+            
+            
 
-          <div class="pagination-container">
-  
-  
-</div>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -137,6 +146,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
