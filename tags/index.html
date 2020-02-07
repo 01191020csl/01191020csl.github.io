@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://01191020csl.github.io/favicon.ico?v=1581043592049">
+<link rel="shortcut icon" href="https://01191020csl.github.io/favicon.ico?v=1581051948174">
 <link rel="stylesheet" href="https://01191020csl.github.io/styles/main.css">
 
 
@@ -18,7 +18,7 @@
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="一只蒟蒻的blog">
   </head>
   <body>
     <div id="app" class="main">
@@ -27,7 +27,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://01191020csl.github.io">
-        <img src="https://01191020csl.github.io/images/avatar.png?v=1581043592049" class="site-logo">
+        <img src="https://01191020csl.github.io/images/avatar.png?v=1581051948174" class="site-logo">
         <h1 class="site-title">01191020csl&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -43,19 +43,19 @@
         
       
         
-          <a href="/solutions" class="site-nav">
+          <a href="/tag/solutions" class="site-nav">
             题解
           </a>
         
       
         
-          <a href="/experiences" class="site-nav">
+          <a href="/tag/experiences" class="site-nav">
             游记
           </a>
         
       
         
-          <a href="/notes" class="site-nav">
+          <a href="/tag/notes" class="site-nav">
             笔记
           </a>
         
@@ -77,10 +77,10 @@
       
     </div>
     <div class="site-description">
-      温故而知新
+      一只蒟蒻的blog
     </div>
     <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://01191020csl.github.io/atom.xml" target="_blank">RSS</a>
+       | <a class="rss" href="https://01191020csl.github.io/atom.xml" target="_blank">RSS</a>
     </div>
   </div>
 </div>
@@ -90,6 +90,12 @@
         <div class="content-container" data-aos="fade-up">
           <h2 class="tag-list-title">标签列表</h2>
           <div class="tags-container">
+            
+              <a class="tag" href="https://01191020csl.github.io/tag/solutions">题解</a>
+            
+              <a class="tag" href="https://01191020csl.github.io/tag/experiences">游记</a>
+            
+              <a class="tag" href="https://01191020csl.github.io/tag/notes">笔记</a>
             
           </div>
         </div>
@@ -110,6 +116,11 @@ var app = new Vue({
 
 </script>
 
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
 
 
 
