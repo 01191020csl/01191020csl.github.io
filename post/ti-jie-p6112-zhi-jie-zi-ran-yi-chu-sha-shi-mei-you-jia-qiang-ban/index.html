@@ -1,22 +1,124 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://01191020csl.github.io</id>
-    <title>01191020csl&apos;s blog</title>
-    <updated>2020-02-27T03:09:24.036Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://01191020csl.github.io"/>
-    <link rel="self" href="https://01191020csl.github.io/atom.xml"/>
-    <subtitle>一只蒟蒻的blog</subtitle>
-    <logo>https://01191020csl.github.io/images/avatar.png</logo>
-    <icon>https://01191020csl.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 01191020csl&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[题解 P6112 【直接自然溢出啥事没有 加强版】]]></title>
-        <id>https://01191020csl.github.io/post/ti-jie-p6112-zhi-jie-zi-ran-yi-chu-sha-shi-mei-you-jia-qiang-ban</id>
-        <link href="https://01191020csl.github.io/post/ti-jie-p6112-zhi-jie-zi-ran-yi-chu-sha-shi-mei-you-jia-qiang-ban">
-        </link>
-        <updated>2020-02-27T03:00:15.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="题意简述">题意简述：</h3>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>题解 P6112 【直接自然溢出啥事没有 加强版】 | 01191020csl&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://01191020csl.github.io/favicon.ico?v=1582772932016">
+<link rel="stylesheet" href="https://01191020csl.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="题意简述：
+
+单个分号;是一个语句。
+空串是一个程序片段。
+如果字符串 A 是程序片段，字符串 B 是语句，则 AB 是程序片段。
+如果字符串 A 是程序片段，则 {A} 是语句块。
+如果字符串 A 是语句块，则 A 是语句，[]A 和 [..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://01191020csl.github.io">
+        <img src="https://01191020csl.github.io/images/avatar.png?v=1582772932016" class="site-logo">
+        <h1 class="site-title">01191020csl&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tag/solutions" class="site-nav">
+            题解
+          </a>
+        
+      
+        
+          <a href="/tag/experiences" class="site-nav">
+            游记
+          </a>
+        
+      
+        
+          <a href="/tag/notes" class="site-nav">
+            笔记
+          </a>
+        
+      
+        
+          <a href="https://01191020csl.github.io/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://01191020csl.github.io/tags" class="site-nav">
+            分类
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一只蒟蒻的blog
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://01191020csl.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">题解 P6112 【直接自然溢出啥事没有 加强版】</h2>
+            <div class="post-date">2020-02-27</div>
+            
+            <div class="post-content" v-pre>
+              <h3 id="题意简述">题意简述：</h3>
 <ul>
 <li>单个分号<code>;</code>是一个语句。</li>
 <li>空串<code></code>是一个程序片段。</li>
@@ -88,75 +190,80 @@
 <p><s>不知道还能不能化简</s><br>
 这样就可以<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>解决此题了<br>
 欢迎各位大佬在<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><msup><mn>2</mn><mn>64</mn></msup></mrow><annotation encoding="application/x-tex">\bmod 2^{64}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span></span>的意义下切了此题并吊打我。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[题解区]]></title>
-        <id>https://01191020csl.github.io/post/ti-jie-qu</id>
-        <link href="https://01191020csl.github.io/post/ti-jie-qu">
-        </link>
-        <updated>2020-02-11T12:52:37.000Z</updated>
-        <content type="html"><![CDATA[<p>这里是我的题解区。</p>
-<h3 id="我的习惯">我的习惯</h3>
-<ul>
-<li>不在题解区打表<strong>找规律</strong>，就算真的这么做了也要补充严格证明</li>
-<li>不在题解区写某个题广为人知的做法，除非有一定改进，或者能够讲得很清楚</li>
-<li>一篇博客只有一份题解</li>
-<li>给出完整代码（打表做法略去表的具体内容而给出运行速度可以接受的表生成器）</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于我]]></title>
-        <id>https://01191020csl.github.io/post/guan-yu-wo</id>
-        <link href="https://01191020csl.github.io/post/guan-yu-wo">
-        </link>
-        <updated>2020-02-07T02:39:08.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>陈树伦</li>
-<li>JSOIer</li>
-<li>我的<a href="https://luogu.com.cn/user/61068">洛谷</a></li>
-<li>我的<a href="http://codeforces.com/profile/01191020csl">CF</a><s>然而至今为止一个题没做</s></li>
-</ul>
-<h3 id="我的码风">我的码风</h3>
-<ul>
-<li><code>#include&lt;bits/stdc++.h&gt; using namespace std;</code></li>
-<li>计数题<code>#define mod 998244353 #define ll long long</code>，且夹在<code>#include</code>和<code>using</code>之间；其他地方从不<code>#define</code></li>
-<li>数组开在很多行，并且看起来比较相关的开在一起</li>
-<li>变量在使用前定义</li>
-<li>逗号前无空格，逗号后有空格</li>
-<li>大括号左括号前一个空格不换行，右括号单独占一行</li>
-<li>严格缩进</li>
-<li>一般运算符前后都带空格（中括号内不带）</li>
-<li>较长的表达式运算符前后都不带空格（赋值不算）</li>
-<li>不写奇怪的表达式</li>
-<li>极长的表达式分行写（新行必定运算符开头且均缩进一个<code>tab</code>），行长平均（包括最后一行）</li>
-<li>数据结构每个节点开一个结构体（节点处只有一个信息的除外），并且不冲突时必有结构体名为<code>node</code>，数组名为<code>nd</code><br>
-例如（树剖，由于这不是树剖教程，函数具体内容已被省略）：</li>
-</ul>
-<pre><code>...
-int head[100001], ver[200001], nxt[200001], sz;
-void addedge(int u, int v) {
-      ...
-}
-int fa[100001], dep[100001];
-int size[100001], son[100001];
-void dfs1(int x) {
-      ...
-}
-int top[100001];
-int rk[100001], cnt;
-void dfs2(int x, int t) {
-      ...
-}
-struct node {
-      int sum, tag;
-}nd[400001];
-...
-int main() {
-  ...
-}
-</code></pre>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://01191020csl.github.io/post/ti-jie-qu">
+                  <h3 class="post-title">
+                    题解区
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '311c9bf929ff47cf51d0',
+        clientSecret: 'eb10cf02fd9a46c8fc06e76be872fd652fddfb2f',
+        repo: 'comments',
+        owner: '01191020csl',
+        admin: ['01191020csl'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
