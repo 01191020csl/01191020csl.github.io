@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://01191020csl.github.io</id>
     <title>01191020csl&apos;s blog</title>
-    <updated>2020-02-28T11:47:33.158Z</updated>
+    <updated>2020-03-01T04:05:17.281Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://01191020csl.github.io"/>
     <link rel="self" href="https://01191020csl.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://01191020csl.github.io/images/avatar.png</logo>
     <icon>https://01191020csl.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 01191020csl&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[笔记区]]></title>
+        <id>https://01191020csl.github.io/post/notes/</id>
+        <link href="https://01191020csl.github.io/post/notes/">
+        </link>
+        <updated>2020-03-01T03:58:52.000Z</updated>
+        <content type="html"><![CDATA[<p>这里是我的笔记区。</p>
+<p>主要内容是学习笔记和一些证明</p>
+<p><s>估计没人关心证明</s></p>
+<p>如果有人想看各种定理/算法的正确性/复杂度证明请在评论区回复（主要是乱搞/暴算搞不出来的）。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[拉格朗日乘数]]></title>
         <id>https://01191020csl.github.io/post/la-ge-lang-ri-cheng-shu/</id>
@@ -141,8 +153,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[题解区]]></title>
-        <id>https://01191020csl.github.io/post/ti-jie-qu/</id>
-        <link href="https://01191020csl.github.io/post/ti-jie-qu/">
+        <id>https://01191020csl.github.io/post/solutions/</id>
+        <link href="https://01191020csl.github.io/post/solutions/">
         </link>
         <updated>2020-02-11T12:52:37.000Z</updated>
         <content type="html"><![CDATA[<p>这里是我的题解区。</p>
@@ -157,8 +169,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[关于我]]></title>
-        <id>https://01191020csl.github.io/post/guan-yu-wo/</id>
-        <link href="https://01191020csl.github.io/post/guan-yu-wo/">
+        <id>https://01191020csl.github.io/post/about/</id>
+        <link href="https://01191020csl.github.io/post/about/">
         </link>
         <updated>2020-02-07T02:39:08.000Z</updated>
         <content type="html"><![CDATA[<ul>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>笔记 | 01191020csl&#39;s blog</title>
+<title>笔记区 | 01191020csl&#39;s blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,13 +12,24 @@
 <link rel="stylesheet" href="https://01191020csl.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="一只蒟蒻的blog">
+    <meta name="description" content="这里是我的笔记区。
+主要内容是学习笔记和一些证明
+估计没人关心证明
+如果有人想看各种定理/算法的正确性/复杂度证明请在评论区回复（主要是乱搞/暴算搞不出来的）。
+" />
+    <meta name="keywords" content="笔记" />
   </head>
   <body>
     <div id="app" class="main">
@@ -100,58 +111,46 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 笔记</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://01191020csl.github.io/post/notes/">
-                  <h2 class="post-title">笔记区</h2>
-                </a>
-                <div class="post-date">
-                  2020-03-01
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://01191020csl.github.io/post/la-ge-lang-ri-cheng-shu/">
-                  <h2 class="post-title">拉格朗日乘数</h2>
-                </a>
-                <div class="post-date">
-                  2020-02-28
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://01191020csl.github.io/post/about/">
-                  <h2 class="post-title">关于我</h2>
-                </a>
-                <div class="post-date">
-                  2020-02-07
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">笔记区</h2>
+            <div class="post-date">2020-03-01</div>
+            
+            <div class="post-content" v-pre>
+              <p>这里是我的笔记区。</p>
+<p>主要内容是学习笔记和一些证明</p>
+<p><s>估计没人关心证明</s></p>
+<p>如果有人想看各种定理/算法的正确性/复杂度证明请在评论区回复（主要是乱搞/暴算搞不出来的）。</p>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://01191020csl.github.io/tag/notes/" class="tag">
+                    笔记
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://01191020csl.github.io/post/la-ge-lang-ri-cheng-shu/">
+                  <h3 class="post-title">
+                    拉格朗日乘数
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -177,6 +176,29 @@ var app = new Vue({
     hljs.initHighlightingOnLoad()
   </script>
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '311c9bf929ff47cf51d0',
+        clientSecret: 'eb10cf02fd9a46c8fc06e76be872fd652fddfb2f',
+        repo: 'comments',
+        owner: '01191020csl',
+        admin: ['01191020csl'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

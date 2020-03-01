@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | 01191020csl&#39;s blog</title>
+<title>关于我 | 01191020csl&#39;s blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://01191020csl.github.io/favicon.ico?v=1582890449137">
+<link rel="shortcut icon" href="https://01191020csl.github.io/favicon.ico?v=1583035514036">
 <link rel="stylesheet" href="https://01191020csl.github.io/styles/main.css">
 
 
@@ -25,14 +25,16 @@
 
 
     <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
+陈树伦
+JSOIer
+我的洛谷
+我的CF然而至今为止一个题没做
 
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
-    <meta name="keywords" content="" />
+我的码风
+
+#include&lt;bits/stdc++.h&gt; using namespace std;
+计数题#define mod 998244353 #def..." />
+    <meta name="keywords" content="游记,笔记" />
   </head>
   <body>
     <div id="app" class="main">
@@ -41,7 +43,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://01191020csl.github.io">
-        <img src="https://01191020csl.github.io/images/avatar.png?v=1582890449137" class="site-logo">
+        <img src="https://01191020csl.github.io/images/avatar.png?v=1583035514036" class="site-logo">
         <h1 class="site-title">01191020csl&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -115,19 +117,69 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
+            <h2 class="post-title">关于我</h2>
+            <div class="post-date">2020-02-07</div>
             
             <div class="post-content" v-pre>
-              <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+              <ul>
+<li>陈树伦</li>
+<li>JSOIer</li>
+<li>我的<a href="https://luogu.com.cn/user/61068">洛谷</a></li>
+<li>我的<a href="http://codeforces.com/profile/01191020csl">CF</a><s>然而至今为止一个题没做</s></li>
+</ul>
+<h3 id="我的码风">我的码风</h3>
+<ul>
+<li><code>#include&lt;bits/stdc++.h&gt; using namespace std;</code></li>
+<li>计数题<code>#define mod 998244353 #define ll long long</code>，且夹在<code>#include</code>和<code>using</code>之间；其他地方从不<code>#define</code></li>
+<li>数组开在很多行，并且看起来比较相关的开在一起</li>
+<li>变量在使用前定义</li>
+<li>逗号前无空格，逗号后有空格</li>
+<li>大括号左括号前一个空格不换行，右括号单独占一行</li>
+<li>严格缩进</li>
+<li>一般运算符前后都带空格（中括号内不带）</li>
+<li>较长的表达式运算符前后都不带空格（赋值不算）</li>
+<li>不写奇怪的表达式</li>
+<li>极长的表达式分行写（新行必定运算符开头且均缩进一个<code>tab</code>），行长平均（包括最后一行）</li>
+<li>数据结构每个节点开一个结构体（节点处只有一个信息的除外），并且不冲突时必有结构体名为<code>node</code>，数组名为<code>nd</code><br>
+例如（树剖，由于这不是树剖教程，函数具体内容已被省略）：</li>
+</ul>
+<pre><code>...
+int head[100001], ver[200001], nxt[200001], sz;
+void addedge(int u, int v) {
+      ...
+}
+int fa[100001], dep[100001];
+int size[100001], son[100001];
+void dfs1(int x) {
+      ...
+}
+int top[100001];
+int rk[100001], cnt;
+void dfs2(int x, int t) {
+      ...
+}
+struct node {
+      int sum, tag;
+}nd[400001];
+...
+int main() {
+  ...
+}
+</code></pre>
 
             </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://01191020csl.github.io/tag/experiences/" class="tag">
+                    游记
+                  </a>
+                
+                  <a href="https://01191020csl.github.io/tag/notes/" class="tag">
+                    笔记
+                  </a>
+                
+              </div>
             
             
 
